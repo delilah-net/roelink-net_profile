@@ -94,7 +94,7 @@
       "level": "MINOR",
       "progress": 100,
       "icon": "/updates/minor.ico",
-      "description": "Created a proper README.md file at the Github, will be useful in the future due to new implementation of planned features."
+      "description": "Created a proper README.md file at the Github, will be useful in the future for new features."
     }
   ]
 }
