@@ -75,6 +75,16 @@
       "progress": 100,
       "icon": "/updates/major.ico",
       "description": "Finished the entire Art Section of the website, covering all the information related to it, as well as most of my proud works."
+    },
+
+    {
+      "id": "9",
+      "name": "Nekoweb API connection",
+      "date": "2026-12-10",
+      "level": "AVERAGE",
+      "progress": 65,
+      "icon": "/updates/average.ico",
+      "description": "Connected the Nekoweb API to the Github Services, in order to push any website updates through git."
     }
   ]
 }
