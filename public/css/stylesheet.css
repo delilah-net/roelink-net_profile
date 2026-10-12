@@ -1,0 +1,1644 @@
+/* ========= BODY =========  */
+body {
+  background-image: url('/resources/background.png');
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  transition: background-position 0.2s ease-out;
+}
+/* ========= BODY =========  */
+
+/* ========= NOTFOUND =========  */
+
+.error-notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.error-notfound button {
+    font-family: 'Tahoma';
+    font-size: 16px;
+    word-spacing: 2px;
+    padding: 12px;
+    margin: 0;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* ========= NOTFOUND =========  */
+
+/* ========= PHONE COMPATIBILITY =========  */
+
+@media (max-width: 1024px) {
+    .tab-sidebar {
+        width: 200px;
+    }
+    
+    .tab-link {
+        font-size: 18px;
+    }
+    
+    .readerware-list {
+        width: 30%;
+        max-width: 30%;
+    }
+    
+    .readerware-display {
+        width: 70%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    p, i, span, ul, li {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    h2 { font-size: 22px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    
+    .header-text {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    .header-text img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .msn-header {
+        font-size: clamp(12px, 4vw, 18px);
+    }
+    
+    #blinkie-estrogen,
+    #blinkie-linux,
+    #blinkie-debian,
+    #blinkie-azumanga,
+    .tab-about,
+    .tab-art,
+    .tab-comm {
+        position: static !important;
+        left: auto !important;
+        top: auto !important;
+        width: 40px !important;
+        height: auto !important;
+        margin: 2px;
+    }
+    
+    .tab-about,
+    .tab-art,
+    .tab-comm {
+        font-size: 11px !important;
+        padding: 0.2em 0.4em !important;
+        color: white;
+    }
+    
+    .tab-system {
+        flex-direction: column;
+    }
+    
+    .tab-content {
+        max-width: 100%;
+        padding: 16px;
+        order: 1;
+    }
+    
+    .tab-sidebar {
+        position: fixed;
+        top: 0;
+        right: -280px;
+        width: 280px;
+        max-width: 85vw;
+        height: 100vh;
+        background: #4766a6;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 60px 12px 12px;
+        gap: 8px;
+        z-index: 1000;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        box-shadow: -4px 0 12px rgba(0,0,0,0.3);
+        transition: right 0.3s ease;
+        will-change: right;
+    }
+
+    .tab-sidebar.open {
+        right: 0;
+    }
+
+    .tab-sidebar .sidebar-divider {
+        width: 100%;
+        text-align: left;
+        margin: 8px 0 4px;
+    }
+    
+    .tab-link {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .tab-sidebar .tab-link:hover,
+    .tab-sidebar .tab-link.active {
+        border-style: inset;
+        background: #000080;
+        color: #fff;
+    }
+    
+    .sidebar-toggle {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        z-index: 1001;
+        background: #c0c0c0;
+        border: 2px outset #dfdfdf;
+        padding: 8px 12px;
+        font-size: 20px;
+        font-family: Tahoma;
+        cursor: pointer;
+    }
+    
+    .sidebar-toggle:active {
+        border-style: inset;
+    }
+    
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.4);
+        z-index: 999;
+    }
+    
+    .sidebar-overlay.visible {
+        display: block;
+    }
+    
+    .tab-content {
+        order: 0;
+    }
+
+    .tab-sidebar .tab-link {
+        font-size: 16px;
+        padding: 12px 16px;
+        text-align: left;
+        border: 2px outset #dfdfdf;
+        background: #c0c0c0;
+        color: #000;
+    }
+    
+    .sidebar-divider {
+        width: 100%;
+        text-align: center;
+        margin: 4px 0;
+    }
+    
+    .updates-container {
+        max-height: 60vh;
+    }
+    
+    .window .title-bar-text {
+        font-size: 14px;
+    }
+    
+    .readerware-container {
+        flex-direction: column;
+        border-width: 8px;
+        padding: 8px;
+    }
+    
+    .readerware-list,
+    .readerware-display {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .readerware-list {
+        border-right: none;
+        border-bottom: 2px inset #dfdfdf;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .readerware-tree-view {
+        padding: 0;
+    }
+    
+    .readerware-card {
+        width: calc(50% - 6px);
+        padding: 6px;
+    }
+    
+    #literature-image {
+        height: 180px;
+    }
+    
+    .moodboard-grid {
+        column-count: 2;
+        column-gap: 8px;
+    }
+    
+    .item-content {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    #item-list {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: contain;
+    }
+    
+    .item-card .window {
+        width: 100% !important;
+    }
+    
+    .stuff-list {
+        max-height: none;
+        overflow-y: visible;
+    }
+    
+    .cards {
+        justify-content: center;
+    }
+    
+    .cards .xp-window {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .card-image {
+        height: 180px;
+    }
+    
+    .ff-wrap {
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 16px !important;
+    }
+    
+    .ff-line {
+        white-space: normal !important;
+        flex-wrap: wrap;
+    }
+    
+    .ff-label {
+        width: auto;
+        min-width: 80px;
+    }
+    
+    .album-window {
+        max-width: 100%;
+    }
+    
+    .now-playing {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .album-cover img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .album-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #mainlogo {
+        width: 90%;
+    }
+    
+    .tab1-blinkies img {
+        height: 60px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .footer-content img {
+        max-width: 80%;
+        height: auto;
+    }
+    
+    #other-blinkies {
+        width: 60px;
+        padding-left: 0;
+    }
+    
+    progress {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    p, i, span, ul, li {
+        font-size: 14px;
+    }
+    
+    .readerware-card {
+        width: 100%;
+    }
+    
+    .moodboard-grid {
+        column-count: 1;
+    }
+    
+    .tab-link {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+    
+    .header-text h2 {
+        font-size: 18px;
+    }
+    
+    .album-cover img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .card-image {
+        height: 150px;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    img, video {
+        height: auto;
+    }
+}
+
+/* ========= PHONE COMPATIBILITY =========  */
+
+/* ========= FONTS =========  */
+@font-face {
+    font-family: 'Tahoma';
+    src: url('/resources/fonts/Tahoma.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('/resources/fonts/FranklinGothic.ttf');
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic';
+}
+
+p, i, span, ul, li {
+    font-family: 'Tahoma';
+    font-size: 20px;
+    word-spacing: 2px;
+    margin: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.header-text img {
+    width:38px;
+    height: 38px;
+}
+
+a:hover {
+    color: #d9483f;
+    transition: 0.3s;
+}
+/* ========= FONTS =========  */
+
+/* ========= MAIN AREA =========  */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#default-blinkie {
+    width: 15%;
+    height: auto;
+}
+
+#other-blinkies {
+    width: 40%;
+    height: auto;
+    padding-left: 6px;
+}
+
+#small-icons {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+#randomizeWallpaperBtn {
+    font-family: 'Tahoma';
+    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+    padding: 12px;
+    margin: 6px;
+
+}
+/* ========= MAIN AREA =========  */
+
+/* ========= FOOTER =========  */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#back-to-top {
+    font-family: 'Tahoma';
+    font-size: 16px;
+    word-spacing: 2px;
+    margin: 0;
+    padding: 6px;
+}
+/* ========= FOOTER =========  */
+
+/* ========= MSN BANNER =========  */
+.msn-header {
+    position: relative;
+    font-size: clamp(14px, 1.5vw, 24px);
+}
+
+#msn-longbanner {
+    max-width: 100%;
+    width: 1600px;
+    height: auto;
+    display: block;
+}
+
+#blinkie-estrogen {
+    position: absolute;
+    left: 61%;
+    top: 40%;
+    max-width: 100%;
+    width: 10%;
+    height: auto;
+}
+
+#blinkie-linux {
+    position: absolute;
+    left: 71.5%;
+    top: 40%;
+    max-width: 100%;
+    width: 10%;
+    height: auto;
+}
+
+#blinkie-debian {
+    position: absolute;
+    left: 82%;
+    top: 35%;
+    max-width: 100%;
+    width: 13.5%;
+    height: auto;
+}
+
+#blinkie-azumanga {
+    position: absolute;
+    left: 82%;
+    top: 60%;
+    max-width: 100%;
+    width: 13.5%;
+    height: auto;
+}
+
+.tab-about {
+    position: absolute;
+    color: white;
+    font-style: italic;
+    padding: 0.5em 1em;
+    left: 25%;
+    top: 47%;
+}
+
+.tab-art {
+    position: absolute;
+    color: white;
+    font-style: italic;
+    padding: 0.5em 1em;
+    left: 36.5%;
+    top: 47%;
+}
+
+.tab-comm {
+    position: absolute;
+    color: white;
+    font-style: italic;
+    padding: 0.5em 1em;
+    left: 48%;
+    top: 47%;
+}
+
+@media (max-width: 768px) {
+    .tab-comm {
+        font-size: 6px;
+        padding: 0.3em 0.6em;
+        bottom: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-about {
+        font-size: 6px;
+        padding: 0.3em 0.6em;
+        bottom: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-art {
+        font-size: 6px;
+        padding: 0.3em 0.6em;
+        bottom: 3%;
+    }
+}
+/* ========= MSN BANNER =========  */
+
+/* ========= TAB SYSTEM =========  */
+
+.sidebar-divider {
+    margin: 6px;
+    padding: 6px;
+    font-style: italic;
+    color: white;
+    background-color: #9090cb;
+    overflow-wrap: break-word;
+}
+
+.tab-system {
+    display: flex;
+}
+
+.tab-content {
+    flex: 1;
+    background: white;
+    padding: 12px;
+    display: none;
+    max-width: 1200px;
+    overflow-wrap: break-word;
+}
+
+.tab-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tab-content:first-child {
+    display: block;
+}
+
+.tab-sidebar {
+    width: 25%;
+    background-color: #4766a6;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-wrap: break-word;
+}
+
+.tab-link {
+    color: white;
+    font-size: 22px;
+    margin: 1px;
+    padding-left: 6px;
+}
+
+.tab-link:hover {
+    color: #b7b7f2;
+    font-style: italic;
+    transition: 0.1s;
+}
+/* ========= TAB SYSTEM =========  */
+
+/* ========= TAB 1 [HOME] =========  */
+
+#mainlogo {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+}
+
+.tab1-blinkies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab1-blinkies img {
+    width: auto;
+    max-width: 100%;
+    height: 80px;
+}
+/* ========= TAB 1 [HOME] =========  */
+
+/* ========= TAB 2 [PROJECTS] =========  */
+
+.cards {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+.cards .xp-window {
+    width: 320px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.cards .xp-window:hover {
+    transform: scale(1.08);
+}
+
+.cards .window {
+    width: 100% !important;
+}
+
+.cards .window-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfdfdf;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards button {
+    align-self: center;
+    font-size: 18px;
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ========= TAB 2 [PROJECTS] =========  */
+
+/* ========= TAB 3 [RESOURCES] =========  */
+.tree-view-unique li img {
+    width: 2%;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+}
+
+.tree-view-unique ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tree-view-unique li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+/* ========= TAB 3 [RESOURCES] =========  */
+
+/* ========= TAB 4 [UPDATES] =========  */
+
+.updates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.update-date {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.update-toggle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.update-description {
+    display: none;
+    padding: 10px;
+    background: #f0f0f0;
+    border: 2px inset #dfdfdf;
+    margin-top: 10px;
+}
+
+.update-description.open {
+    display: block;
+}
+
+.level-MAJOR { color: rgb(234, 71, 71); font-weight: bold; }
+.level-AVERAGE { color: #d80; font-weight: bold; }
+.level-MINOR { color: rgb(16, 185, 16); font-weight: bold; }
+
+.title-bar-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.title-bar-text {
+    font-size: 18px;
+}
+
+.update-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.update-action-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.update-action-row progress {
+    width: 100%;
+}
+/* ========= TAB 4 [UPDATES] =========  */
+
+/* ========= TAB 5 [ABOUTME] =========  */
+.portrait-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.portrait-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portrait-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+    font-style: italic;
+}
+
+.portrait-text img {
+    width: 42px;
+    height: 42px;
+}
+
+#truesona {
+    width: 60%;
+    max-width: 100%;
+    height: 60%;
+    border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACS0lEQVR4Aezb0XKDIBCFYdP3f+cW7thTIlEOBvTvhBlXBJYPhpiL/mztv9/0yJ1Kms64zyeg40a/Yc+AmhcV0AlAXymHlUpK97oPO9RsDSigZgFzd7Udqu+cOmSrXp+fLdb8Ne7Ktwba1eHTGwNq3gGADgDVM0TfMXVIrdf2+vxsseZvzY8dauXcNkABNQuYu3Ps0FfKqSwpXPqj3wka707OAbo7wNMqATWvOKCAmgX+d1d+H+Tr/0/s3GGH7uCcqQL0jNpOG0B3cM5UZdB8TpTl0HvXh4Pe6TH1CXEGvdNkvz4XQM1LAOgFoOV5mq/NQy7fXTYpS5gQOzRw9AeA9huGHgANHP0BoP2GoQdAA0d/AGi/YegB0MDRH9RAw2/TyhCt+kqTU7eWbFQDXXIisyQNqHklAB0Aqmdi+Ts1X+uQ+V5ZtL0+/6iYHWpebkABNQuYu3Ps0PI8zdfmFNfqzgG61owHZwuoGRhQQHcFvl7JDjUvAaCAmgXM3eUdmt8dy8Jv8w7kDNrRnKYqAKiKdMaAdgJq8xpoeZ7ma22jZ+zsseY/NK6BDh3w7p0Dal5hQL8Ams/RsmgKZd0K15q/NWaHWjk3/l/e7AnojKCzv4e28rOacoZaOTlDzZyATgH6SlmUJYXhU9ateB0mczTgDD0q1nge0AbQ0WpAj4o1nh8B2nrvW62+Rvj23gjQt4M9oQJQ8yoDOiGovmtqilq/eqzzCzE7NHD0B4D2G4YeAA0c/cEVoKu9dx7NN6zCFaBhwLsHgJpXGFAz6B8AAAD//9X2cvkAAAAGSURBVAMAzPQ8eBUZYS0AAAAASUVORK5CYII=') 28 /  28px / 0 round;
+    border-width:  28px;
+    border-style:  solid; 
+    padding: 4px;
+  }
+
+#divider-image {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+.profile-info p {
+    overflow-wrap: break-word;
+  }
+
+.profile-info img {
+    width: 26px;
+    height: 26px;
+}
+
+.profile-info a:hover {
+    color: #d9483f;
+    transition: 0.6s;
+}
+/* ========= TAB 5 [ABOUTME] =========  */
+
+/* ========= TAB 6 [GAMING] =========  */
+.tree-view li {
+    display: flex;
+    align-items :center;
+    gap: 10px;
+}
+
+#gaming-icons {
+    width: 28px;
+    height: 28px;
+}
+
+.ff-wrap {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start !important;
+    gap: 28px;
+    background: #000;
+    padding: 24px 32px;
+    font-family: "Tahoma";
+    font-size: 14px;
+    line-height: 1.35;
+    color: #b7f0a8;
+  }
+
+  .ff-logo {
+    display: block !important;
+    flex: 0 0 auto !important;
+    color: #8ee06b;
+    white-space: pre;
+    font-size: 13px;
+    line-height: 1.15;
+    margin: 0;
+    text-shadow: 0 0 6px rgba(142,224,107,0.35);
+  }
+
+  .ff-info {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 1 auto !important;
+    gap: 4px;
+    padding-top: 4px;
+    min-width: 0;
+  }
+
+  .ff-group {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+    border-bottom: 1px solid #204d1c;
+  }
+  .ff-group:last-child { border-bottom: none; }
+
+  .ff-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .ff-arrow { color: #6fe04a; }
+  .ff-icon  { color: #8ee06b; width: 1.1em; display: inline-block; text-align: center; }
+  .ff-label {
+    color: #6fe04a;
+    font-weight: bold;
+    width: 62px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  .ff-value { color: #eafce0; }
+  .ff-accent { color: #f4e05a; } /* yellow highlight, e.g. percentages */
+  .ff-dim { color: #7fbf6f; }
+/* ========= TAB 6 [GAMING] =========  */
+
+/* ========= TAB 7 [MUSIC] =========  */
+
+.app-window { width: 320px; max-width: 92vw; }
+  .cover-wrap { display: flex; justify-content: center; margin: 10px 0 4px; }
+  #cover {
+    width: 180px; height: 180px;
+    border: 2px solid #46494d;
+    box-shadow: 2px 2px 0 #808080;
+    image-rendering: crisp-edges;
+  }
+  #albumName { margin: 4px 0; font-weight: bold; font-size: 14px; }
+  #artistName { margin: 0 0 6px; font-style: italic; font-size: 12px; }
+  .controls-row { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
+  #counter { font-size: 11px; }
+
+/* ========= TAB 7 [MUSIC] =========  */
+
+/* ========= TAB 7 [LITERATURE & MOVIES] =========  */
+
+.readerware-container {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-style: inset;
+    border-color: #4766a6;
+    border-width: 16px;
+}
+
+.readerware-list{
+    width: 40%;
+    max-width: 40%;
+}
+
+.readerware-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    max-width: 60%;
+    padding: 0;     
+    gap: 8px;
+    max-height: 520px;
+    overflow-y: auto;
+    overflow-x: hidden;       
+}
+
+.readerware-tree-view {
+    padding: 6px;
+    list-style-type: none;
+    border-right-style: inset;
+}
+
+.readerware-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4px;        
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 8px;      
+    flex: 0 0 auto;      
+    width: 180px;        
+    border: 2px outset #dfdfdf; 
+    background: #fff;
+}
+
+.readerware-card h4 {
+    margin: 0;
+    padding: 12px;
+}
+
+.readerware-card p {
+    margin: 0;
+    padding: 4px;
+    color: grey;
+    font-style: italic;
+}
+
+#literature-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: none;
+}
+
+/* ========= TAB 7 [LITERATURE & MOVIES] =========  */
+
+/* ========= TAB 8 [HOBBIES] =========  */
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    gap: 6px;
+}
+
+#artshowcase {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-width: 0; 
+}
+
+/* ========= TAB 8 [HOBBIES] =========  */
+
+/* ========= TAB 10 [MOODBOARD] =========  */
+
+.moodboard-window {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.moodboard-grid {
+    column-count: 4;
+    column-gap: 12px;
+    padding: 4px;
+}
+
+.moodboard-item {
+    break-inside: avoid;
+    border: 2px outset #dfdfdf;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.moodboard-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.moodboard-item:hover {
+    border-style: inset;
+}
+
+/* ========= TAB 10 [MOODBOARD] =========  */
+
+/* ========= TAB 11/12 [ITEM LISTS] =========  */
+
+#item-list {
+    width: auto;
+    height: 250px;
+}
+
+.item-card {
+    object-fit: contain;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.item-text {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.stuff-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 820px;
+    overflow-y: auto;
+}
+
+/* ========= TAB 11/12 [ITEM LISTS] =========  */
+
+/*     ======           ======   */
+/* ========= [ART SECTION] =========  */
+/*     ======           ======   */
+
+/* ========= ART MAIN =========  */
+
+#artlogo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+#character-example {
+    width: 35%;
+    height:auto;
+    max-width: 100%;
+}
+
+.robloxlink {
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px;
+}
+
+#gamebanner {
+    max-width: 100%;
+    width: 30%;
+    height: auto;
+}
+
+.huion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.huion img {
+    max-width: 100%;
+    width: 40%;
+    height: auto;
+}
+
+.personalart-item,
+.comm-item,
+.fanart-item,
+.gunmodels-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.art-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #0a246a, #a6caf0);
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 6px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    pointer-events: none;
+}
+
+.personalart-item:hover .art-caption,
+.comm-item:hover .art-caption,
+.fanart-item:hover .art-caption,
+.gunmodels-item:hover .art-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.personalart-window, .comm-window, .fanart-window, .gunmodels-window {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 2000px;
+}
+
+/* ========= ART MAIN =========  */
+
+/* ========= PERSONAL DRAWINGS =========  */
+
+.personalart-window {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.personalart-grid {
+    column-width: 400px;
+    column-gap: 12px;
+    padding: 4px;
+}
+
+.personalart-item {
+    break-inside: avoid;
+    border: 2px outset #dfdfdf;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.personalart-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.personalart-item:hover {
+    border-style: inset;
+}
+
+.personalart-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+.personalart-modal-overlay.open { display: flex; }
+
+.personalart-modal-window {
+    width: min(90vw, 900px);
+    height: min(85vh, 700px);
+    display: flex;
+    flex-direction: column;
+}
+.personalart-modal-window .window-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.personalart-modal-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+.personalart-modal-toolbar button { min-width: 30px; }
+.personalart-modal-toolbar span { margin: 0 4px; font-size: 12px; }
+.personalart-modal-toolbar #personalartZoomReset {
+    margin-left: auto;
+}
+
+.personalart-modal-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border: 2px inset #dfdfdf;
+    touch-action: none;
+}
+.personalart-modal-viewport.dragging { cursor: grabbing; }
+
+.personalart-modal-viewport img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+    transform: translate(-50%, -50%);
+}
+
+#zoombuttons {
+    width: auto;
+    height: 30px;
+}
+
+/* ========= PERSONAL DRAWINGS =========  */
+
+/* ========= COMM =========  */
+
+.comm-window {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.comm-grid {
+    column-width: 400px;
+    column-gap: 12px;
+    padding: 4px;
+}
+
+.comm-item {
+    break-inside: avoid;
+    border: 2px outset #dfdfdf;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.comm-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.comm-item:hover {
+    border-style: inset;
+}
+
+.comm-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+.comm-modal-overlay.open { display: flex; }
+
+.comm-modal-window {
+    width: min(90vw, 900px);
+    height: min(85vh, 700px);
+    display: flex;
+    flex-direction: column;
+}
+.comm-modal-window .window-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.comm-modal-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+.comm-modal-toolbar button { min-width: 30px; }
+.comm-modal-toolbar span { margin: 0 4px; font-size: 12px; }
+.comm-modal-toolbar #commZoomReset {
+    margin-left: auto;
+}
+
+.comm-modal-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border: 2px inset #dfdfdf;
+    touch-action: none;
+}
+.comm-modal-viewport.dragging { cursor: grabbing; }
+
+.comm-modal-viewport img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+    transform: translate(-50%, -50%);
+}
+
+#zoombuttons {
+    width: auto;
+    height: 30px;
+}
+
+/* ========= COMM =========  */
+
+/* ========= FANARTS =========  */
+
+.fanart-window {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.fanart-grid {
+    column-width: 400px;
+    column-gap: 12px;
+    padding: 4px;
+}
+
+.fanart-item {
+    break-inside: avoid;
+    border: 2px outset #dfdfdf;
+    background: #fff;
+    margin-bottom: 12px;
+}
+
+.fanart-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fanart-item:hover {
+    border-style: inset;
+}
+
+.fanart-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+.fanart-modal-overlay.open { display: flex; }
+
+.fanart-modal-window {
+    width: min(90vw, 900px);
+    height: min(85vh, 700px);
+    display: flex;
+    flex-direction: column;
+}
+.fanart-modal-window .window-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.fanart-modal-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+.fanart-modal-toolbar button { min-width: 30px; }
+.fanart-modal-toolbar span { margin: 0 4px; font-size: 12px; }
+.fanart-modal-toolbar #commZoomReset {
+    margin-left: auto;
+}
+
+.fanart-modal-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border: 2px inset #dfdfdf;
+    touch-action: none;
+}
+.fanart-modal-viewport.dragging { cursor: grabbing; }
+
+.fanart-modal-viewport img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+    transform: translate(-50%, -50%);
+}
+
+#zoombuttons {
+    width: auto;
+    height: 30px;
+}
+
+/* ========= FANARTS =========  */
+
+/* ========= 3D MODELS =========  */
+
+.gunmodels-window {
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.gunmodels-grid {
+    padding: 4px;
+}
+
+.gunmodels-section {
+    margin-bottom: 22px;
+}
+
+.gunmodels-category {
+    margin: 0 0 8px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(180deg, #0a246a, #a6caf0);
+    border: 1px solid #0a246a;
+    border-radius: 3px 3px 0 0;
+}
+
+.gunmodels-subgrid {
+    column-width: 280px;
+    column-gap: 12px;
+}
+
+.gunmodels-item {
+    break-inside: avoid;
+    margin-bottom: 12px;
+}
+
+.gunmodels-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gunmodels-item:hover {
+    border-style: inset;
+}
+
+.gunmodels-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+.gunmodels-modal-overlay.open { display: flex; }
+
+.gunmodels-modal-window {
+    width: min(90vw, 900px);
+    height: min(85vh, 700px);
+    display: flex;
+    flex-direction: column;
+}
+.gunmodels-modal-window .window-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.gunmodels-modal-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+.gunmodels-modal-toolbar button { min-width: 30px; }
+.gunmodels-modal-toolbar span { margin: 0 4px; font-size: 12px; }
+.gunmodels-modal-toolbar #commZoomReset {
+    margin-left: auto;
+}
+
+.gunmodels-modal-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border: 2px inset #dfdfdf;
+    touch-action: none;
+}
+.gunmodels-modal-viewport.dragging { cursor: grabbing; }
+
+.gunmodels-modal-viewport img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+    transform: translate(-50%, -50%);
+}
+
+#zoombuttons {
+    width: auto;
+    height: 30px;
+}
+
+/* ========= 3D MODELS =========  */

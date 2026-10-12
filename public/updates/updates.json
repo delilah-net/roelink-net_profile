@@ -1,0 +1,80 @@
+{
+  "updates": [
+    {
+      "id": "1",
+      "name": "Main website preparations",
+      "date": "2026-09-07",
+      "level": "MAJOR",
+      "progress": 50,
+      "icon": "/updates/major.ico",
+      "description": "Working on the main website foundations and code to properly implement all features."
+    },
+    {
+      "id": "2",
+      "name": "Implementing phone support compatibility",
+      "date": "2026-09-07",
+      "level": "AVERAGE",
+      "progress": 80,
+      "icon": "/updates/average.ico",
+      "description": "Attempting to make the website as phone-friendly as possible, while retaining the aesthetic planned."
+    },
+    {
+      "id": "3",
+      "name": "Merged other websites into 1",
+      "date": "2026-10-07",
+      "level": "MINOR",
+      "progress": 40,
+      "icon": "/updates/minor.ico",
+      "description": "Merged all my previous projects into this single website, rather than having them separatedly [Art Section | Commissions]"
+    },
+    {
+      "id": "4",
+      "name": "Finished myself tab",
+      "date": "2026-13-07",
+      "level": "MINOR",
+      "progress": 100,
+      "icon": "/updates/minor.ico",
+      "description": "Simply finished all the information display on the myself tab."
+    },
+
+    {
+      "id": "5",
+      "name": "Home Section Finished",
+      "date": "2026-18-07",
+      "level": "MAJOR",
+      "progress": 42,
+      "icon": "/updates/major.ico",
+      "description": "Entire home section finished, only needs updates from time to time."
+    },
+
+    {
+      "id": "6",
+      "name": "Website 1.0 publish",
+      "date": "2026-18-07",
+      "level": "MAJOR",
+      "progress": 100,
+      "icon": "/updates/major.ico",
+      "description": "First website publish on Nekoweb."
+    },
+
+    {
+      "id": "7",
+      "name": "Website fixes + Small additions",
+      "date": "2026-25-09",
+      "level": "AVERAGE",
+      "progress": 82,
+      "icon": "/updates/average.ico",
+      "description": "Fixed a few issues with scaling and such on the website, phone support is still limited and is only possible when rotating the phone horizontally. --- Added new background parallax effects + randomized backgrounds, you can change these with the button found in the top of the sidebar! Many BGs available."
+    },
+
+    {
+      "id": "8",
+      "name": "Art Section addition",
+      "date": "2026-25-09",
+      "level": "MAJOR",
+      "progress": 100,
+      "icon": "/updates/major.ico",
+      "description": "Finished the entire Art Section of the website, covering all the information related to it, as well as most of my proud works."
+    }
+  ]
+}
