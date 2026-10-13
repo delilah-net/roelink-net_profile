@@ -95,6 +95,26 @@
       "progress": 100,
       "icon": "/updates/minor.ico",
       "description": "Created a proper README.md file at the Github, will be useful in the future for new features."
+    },
+
+    {
+      "id": "11",
+      "name": "Comments addition + Cursor",
+      "date": "2026-12-10",
+      "level": "AVERAGE",
+      "progress": 62,
+      "icon": "/updates/average.ico",
+      "description": "Added a comment system implemented in the sidebar, thanks to Atabook services. /// Added a custom cursor for the website."
+    },
+    
+    {
+      "id": "12",
+      "name": "Added more backgrounds",
+      "date": "2026-12-10",
+      "level": "MINOR",
+      "progress": 100,
+      "icon": "/updates/minor.ico",
+      "description": "Added 5 new backgrounds to the randomized rotation."
     }
   ]
 }

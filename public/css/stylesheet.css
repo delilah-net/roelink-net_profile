@@ -5,6 +5,13 @@ body {
   background-position: 50% 50%;
   transition: background-position 0.2s ease-out;
 }
+
+body {
+  cursor: url("/resources/cursor.png") 0 0, auto;
+}
+a, button, input[type="submit"] {
+  cursor: url("/resources/cursor.png") 6 0, pointer;
+}
 /* ========= BODY =========  */
 
 /* ========= NOTFOUND =========  */
@@ -477,6 +484,22 @@ a:hover {
     margin: 6px;
 
 }
+
+.guestbook {
+    border-style: inset;
+    border-color: #d9483f;
+    border-width: 12px;
+}
+
+.guestbook iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  height: 650px;
+}
+
 /* ========= MAIN AREA =========  */
 
 /* ========= FOOTER =========  */

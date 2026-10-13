@@ -14,6 +14,18 @@ document.addEventListener('mousemove', (e) => {
 
 // PARALLAX //
 
+// CLICK SOUNDS //
+
+const clickSound = new Audio("CHANGEME");
+clickSound.volume = 0.4;
+
+document.addEventListener("click", () => {
+  clickSound.currentTime = 0;
+  clickSound.play();
+});
+
+// CLICK SOUNDS //
+
 // WALLPAPER RANDOMIZER //
 
 const wallpapers = [
@@ -30,6 +42,11 @@ const wallpapers = [
     "/resources/backgrounds/fish.png",
     "/resources/backgrounds/tiles1.png",
     "/resources/backgrounds/bluefishes.png",
+    "/resources/backgrounds/discs.jpg",
+    "/resources/backgrounds/marmol.gif",
+    "/resources/backgrounds/flowerzdark.png",
+    "/resources/backgrounds/catsquares.gif",
+    "/resources/backgrounds/catmoons.jpg",
 ];
 
 function randomizeWallpaper() {
